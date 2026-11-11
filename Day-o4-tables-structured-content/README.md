@@ -4,3 +4,4 @@
 - **Bug fixed:** Observed layout behavior when omitting a closing `</td>` tag and restored valid closing tags to ensure consistent parsing.
 - **Concept explained:** `scope="col"` and `scope="row"` provide screen readers with context for which header corresponds to each data cell.
 
+
