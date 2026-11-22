@@ -1,0 +1,315 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects.json — Swati Panda Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div>projects.json — Swati Panda Portfolio — Visual Studio Code</div>
+            <div>UTF-8</div>
+        </div>
+        <div class="tab-bar">
+            <a href="index.html" class="brand-tab">
+                <img src="images/logo.jpeg" alt="SP Logo">
+                <span>SWATI.DEV</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="ext-html">&lt;&gt;</span> index.html</a></li>
+                    <li><a href="about.html"><span class="ext-ts">TS</span> about.ts</a></li>
+                    <li><a href="projects.html" class="active"><span class="ext-json">{}</span> projects.json</a></li>
+                    <li><a href="contact.html"><span class="ext-sh">$_</span> contact.sh</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="breadcrumb">
+            src &rsaquo; portfolio &rsaquo; <span class="tok-var">projects.json</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="editor-panel">
+            <p class="tok-comment">// Featured builds &amp; software repositories</p>
+            <h1>&#123; <span class="tok-string">"featuredProjects"</span>: [</h1>
+
+            <div class="grid-2">
+                <article class="code-card">
+                    <h3><span class="tok-string">"Rang-e-Bharat"</span></h3>
+                    <p>Digital Art gallery web application celebrating Indian folk art styles with categorized collections and database persistence.</p>
+                    <div class="tag-row">
+                        <span class="tag tag-purple">PHP</span>
+                        <span class="tag tag-blue">MySQL</span>
+                        <span class="tag tag-orange">HTML5</span>
+                        <span class="tag tag-teal">CSS3</span>
+                    </div>
+                </article>
+
+                <article class="code-card">
+                    <h3><span class="tok-string">"Timey Clock Suite"</span></h3>
+                    <p>Multi-mode React clock web app featuring real-time digital clocks, custom audio alarms, world clocks, stopwatch, and timers.</p>
+                    <div class="tag-row">
+                        <span class="tag tag-blue">React</span>
+                        <span class="tag tag-yellow">JavaScript</span>
+                        <span class="tag tag-teal">CSS3</span>
+                    </div>
+                </article>
+
+                <article class="code-card">
+                    <h3><span class="tok-string">"Railway &amp; Bus Reservation"</span></h3>
+                    <p>Database-backed booking and schedule platform for managing routes, passenger details, and seat availability.</p>
+                    <div class="tag-row">
+                        <span class="tag tag-purple">ASP.NET</span>
+                        <span class="tag tag-teal">C#</span>
+                        <span class="tag tag-blue">SQL Server</span>
+                    </div>
+                </article>
+
+                <article class="code-card">
+                    <h3><span class="tok-string">"The Swati Panda Tutorials"</span></h3>
+                    <p>Educational YouTube video series breaking down C programming fundamentals, logic building, and algorithms step by step.</p>
+                    <div class="tag-row">
+                        <span class="tag tag-blue">C Language</span>
+                        <span class="tag tag-yellow">Algorithms</span>
+                        <span class="tag tag-orange">Pedagogy</span>
+                    </div>
+                </article>
+            </div>
+
+            <h1 style="margin-top: 1rem;">] &#125;</h1>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            <strong>&#9733; main*</strong>
+            <span>0 errors, 0 warnings</span>
+        </span>
+        <span>
+            <span>Ln 1, Col 1</span>
+            <span>Spaces: 4</span>
+            <span>JSON</span>
+            <span>&copy; 2026 Swati Panda</span>
+        </span>
+    </footer>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects.json — Swati Panda Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .grid-2 {
+            display: grid !important;
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            gap: 2rem !important;
+            width: 100% !important;
+            max-width: 1200px !important;
+            margin: 1.5rem auto !important;
+        }
+
+        @media (max-width: 900px) {
+            .grid-2 {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        
+        .popup-card {
+            min-width: 0 !important;
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            border-radius: 12px !important;
+            border: 1px solid #30363d !important;
+            background-color: #1e1e1e !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+        }
+
+        .popup-card:hover {
+            transform: translateY(-6px) !important;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7) !important;
+            border-color: #569cd6 !important;
+        }
+
+        
+        .card-preview {
+            width: 100% !important;
+            background-color: #0f0f0f !important;
+            border-bottom: 1px solid #30363d !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            overflow: hidden !important;
+        }
+
+        .card-preview img {
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+            transition: transform 0.35s ease !important;
+        }
+
+        .popup-card:hover .card-preview img {
+            transform: scale(1.02) !important;
+        }
+
+        
+        .card-body {
+            padding: 1.25rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-grow: 1 !important;
+        }
+
+        .card-body h3 {
+            margin-top: 0 !important;
+            margin-bottom: 0.5rem !important;
+        }
+
+        .card-body p {
+            margin: 0 0 1.2rem 0 !important;
+            flex-grow: 1 !important;
+            line-height: 1.5 !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div>projects.json — Swati Panda Portfolio — Visual Studio Code</div>
+            <div>UTF-8</div>
+        </div>
+        <div class="tab-bar">
+            <a href="index.html" class="brand-tab">
+                <img src="images/logo.jpeg" alt="SP Logo">
+                <span>SWATI.DEV</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span class="ext-html">&lt;&gt;</span> index.html</a></li>
+                    <li><a href="about.html"><span class="ext-ts">TS</span> about.ts</a></li>
+                    <li><a href="projects.html" class="active"><span class="ext-json">{}</span> projects.json</a></li>
+                    <li><a href="contact.html"><span class="ext-sh">$_</span> contact.sh</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="breadcrumb">
+            src &rsaquo; portfolio &rsaquo; <span class="tok-var">projects.json</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="editor-panel">
+            <p class="tok-comment">// Featured builds &amp; software repositories</p>
+            <h1>&#123; <span class="tok-string">"featuredProjects"</span>: [</h1>
+
+            <div class="grid-2">
+                
+                <article class="code-card popup-card">
+                    <div class="card-preview">
+                        <img src="images/Rang-E-Bharat-Image.png" alt="Rang-e-Bharat Preview">
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="tok-string">"Rang-e-Bharat"</span></h3>
+                        <p>Digital Art gallery web application celebrating Indian folk art styles with categorized collections and database persistence.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-purple">PHP</span>
+                            <span class="tag tag-blue">MySQL</span>
+                            <span class="tag tag-orange">HTML5</span>
+                            <span class="tag tag-teal">CSS3</span>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="code-card popup-card">
+                    <div class="card-preview">
+                        <img src="images/Timeyimage.png" alt="Timey Clock Suite Preview">
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="tok-string">"Timey Clock Suite"</span></h3>
+                        <p>Multi-mode React clock web app featuring real-time digital clocks, custom audio alarms, world clocks, stopwatch, and timers.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-blue">React</span>
+                            <span class="tag tag-yellow">JavaScript</span>
+                            <span class="tag tag-teal">CSS3</span>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="code-card popup-card">
+                    <div class="card-preview">
+                        <img src="images/TasteOfOdishaimage.png" alt="Taste Of Odisha">
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="tok-string">"Taste Of &amp; Odisha"</span></h3>
+                        <p>Afront-end web experience celebrating authentic Odia culinary heritage, features traditional delicacies like Chhena Poda and Arisa Pitha along side cultural highlights from Odisha.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-purple">Html</span>
+                            <span class="tag tag-teal">CSS</span>
+                            <span class="tag tag-blue">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="code-card popup-card">
+                    <div class="card-preview">
+                        <img src="images/Libraryimage.png" alt="Library Management System">
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="tok-string">"Library Management System"</span></h3>
+                        <p>Currently Developing A full-stack Library Management System built with ASP.NET Web Forms, C#, and SQL Server.Designed to streamline book inventory, student records,issues/return tracking, and report generation through  a clean, responsive interface.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-blue">ASP.NET</span>
+                            <span class="tag tag-yellow">SSMS</span>
+                           
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <h1 style="margin-top: 1rem;">] &#125;</h1>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            <strong>&#9733; main*</strong>
+            <span>0 errors, 0 warnings</span>
+        </span>
+        <span>
+            <span>Ln 1, Col 1</span>
+            <span>Spaces: 4</span>
+            <span>JSON</span>
+            <span>&copy; 2026 Swati Panda</span>
+        </span>
+    </footer>
+</body>
+</html>

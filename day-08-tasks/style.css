@@ -1,0 +1,31 @@
+body{
+  font-family:Arial,Helvetica,Sans-serif;
+  background-color:#f4f6f8;
+  color:#222222;
+  margin:0;
+  padding:24px;
+}
+
+h1{
+  text-align:center;
+  color:#1a365d;
+}
+
+p{
+  text-align:center;
+  color:#1a365d;
+}
+
+p{
+  font-size:16px;
+  line-height:1.6;
+  margin-bottom:16px;
+}
+
+.card, img, blockquote{
+  border:2px solid #cbd5e1;
+  border-radius:8px;
+  padding:16px;
+  background-color:#ffffff;
+  text-align:center;
+}
