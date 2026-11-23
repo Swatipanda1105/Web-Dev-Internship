@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Demo — Day 05</title>
+</head>
+<body>
+  <header>
+    <h1>Student Registration Demo</h1>
+    <p><strong>Practice Notice:</strong> This form is a static HTML exercise only. No registration data is saved or submitted to a server.</p>
+  </header>
+
+  <main>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Student Information </legend>
+
+        <div>
+          <label for="full-name">Full Name (Required):</label><br>
+          <input type="text" id="full-name" name="full_name" minlength="2" required placeholder="e.g., Rohan Verma">
+        </div>
+        <br>
+
+        <div>
+          <label for="email-address">Email Address (Required):</label><br>
+          <input type="email" id="email-address" name="email" required placeholder="e.g., rohan@example.com">
+        </div>
+        <br>
+
+        <div>
+          <label for="student-age">Age (16–99, Required):</label><br>
+          <input type="number" id="student-age" name="age" min="16" max="99" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="course-select">Select Course (Required):</label><br>
+          <select id="course-select" name="course" required>
+            <option value="">-- Choose a course --</option>
+            <option value="web-dev">Full-Stack Web Development</option>
+            <option value="frontend">Frontend Engineering</option>
+            <option value="ui-ux">UI/UX &amp; Accessibility</option>
+            <option value="js-basics">JavaScript Foundations</option>
+          </select>
+        </div>
+        <br>
+
+        <fieldset>
+          <legend>Study Mode (Required):</legend>
+          <div>
+            <input type="radio" id="mode-online" name="study_mode" value="online" required>
+            <label for="mode-online">Online</label>
+          </div>
+          <div>
+            <input type="radio" id="mode-hybrid" name="study_mode" value="hybrid">
+            <label for="mode-hybrid">Hybrid</label>
+          </div>
+          <div>
+            <input type="radio" id="mode-campus" name="study_mode" value="on_campus">
+            <label for="mode-campus">On-Campus</label>
+          </div>
+        </fieldset>
+        <br>
+
+        <div>
+          <label for="learning-goals">Learning Goals:</label><br>
+          <textarea id="learning-goals" name="learning_goals" rows="4" cols="40" placeholder="Describe what you want to learn in this program..."></textarea>
+        </div>
+        <br>
+
+        <div>
+          <input type="checkbox" id="practice-confirm" name="practice_confirm" required>
+          <label for="practice-confirm">I confirm I am using fictional practice data only (Required).</label>
+        </div>
+        <br>
+
+        <div>
+          <button type="submit">Submit Registration</button>
+          <button type="button" onclick="alert('This is a static demo form. No data is saved.');">Form Info</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>Tech Fellows — Day 05 Practical Task | HTML Forms &amp; Inputs</p>
+  </footer>
+</body>
+</html>

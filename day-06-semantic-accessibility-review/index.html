@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swati Panda — Semantic Profile & Contact</title>
+</head>
+<body>
+
+  <header>
+    <h1>Swati Panda — Web Development Portfolio</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#contact">Contact Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      
+      <p>I am a Bachelor of Computer Applications (BCA) graduate from R. K. Desai Achchhariwala College of Computer and Applied Sciences in Vapi, Gujarat, currently completing my 90-day Tech Fellows web development internship.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills Overview</h2>
+      <hr>
+      <table>
+        <caption>Core Programming and Web Technologies</caption>
+        <hr>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Technologies</th>
+            <th scope="col">Proficiency Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frontend</td>
+            <td>HTML5, CSS3, JavaScript, React</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Backend & Database</td>
+            <td>PHP, MySQL, ASP.NET, Node.js</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Core Languages & Tools</td>
+            <td>C, C++, Java, Python, Git, GitHub</td>
+            <td>Strong Foundation</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2> Contact Form</h2>
+      <p>Fields marked with (Required) must be completed before submitting.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="full-name">Full Name (Required):</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <div>
+          <label for="email-address">Email Address (Required):</label>
+          <input type="email" id="email-address" name="email-address" required>
+        </div>
+
+        <fieldset>
+          <legend>Preferred Inquiry Topic</legend>
+          <hr>
+          <input type="radio" id="topic-web" name="inquiry-topic" value="web" checked>
+          <label for="topic-web">Web Development</label>
+
+          <input type="radio" id="topic-teaching" name="inquiry-topic" value="teaching">
+          <label for="topic-teaching">Computer Teaching</label>
+        </fieldset>
+
+        <div>
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="user-message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Swati Panda | View code on <a href="https://github.com/Swatipanda1105">Swati Panda's GitHub Profile</a></p>
+  </footer>
+
+</body>
+</html>
